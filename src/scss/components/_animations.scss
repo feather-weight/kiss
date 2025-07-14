@@ -1,0 +1,9 @@
+@keyframes floatStars {
+  from { background-position: 0 100%; }
+  to { background-position: 0 -100%; }
+}
+
+@keyframes matrixDown {
+  from { background-position: 0 -100%; }
+  to { background-position: 0 100%; }
+}

@@ -1,0 +1,9 @@
+.particles-component {
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(white 1.5px, transparent 1.5px);
+  background-size: 80px 80px;
+  animation: floatStars 8s linear infinite;
+  opacity: 0.6;
+  z-index: 2;
+}

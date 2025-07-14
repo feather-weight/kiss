@@ -1,7 +1,14 @@
-@use 'abstracts/variables';
-@use 'abstracts/mixins';
-@use 'base/reset';
-@use 'base/typography';
-@use 'layout/grid';
-@use 'components/buttons';
-@use 'components/cards';
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+@use '../base/reset';
+@use '../base/typography';
+
+@use '../layout/grid';
+
+@use 'background';
+@use 'particles';
+@use 'matrix';
+@use 'hero';
+@use 'pi-button';
+@use 'animations';
