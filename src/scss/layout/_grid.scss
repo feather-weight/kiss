@@ -1,0 +1,31 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.5rem;
+}
+
+[class^='col-'] {
+  padding: 0 0.5rem;
+}
+
+@for $i from 1 through 12 { 
+  .col-#{$i} { 
+    flex: 0 0 percentage($i / 12); 
+  } 
+}
+
+@include respond($breakpoint-md) {
+  [class^='col-'] {
+    flex: 0 0 100%;
+  }
+}
